@@ -801,7 +801,7 @@ const descargarXLSX = async (req, res) => {
     exportToExcel(publicaciones)
       .then((buffer) => {
         // Configurar las cabeceras para la descarga del archivo
-        res.setHeader("Content-Disposition", "attachment; filename=datos.xlsx");
+        res.setHeader("Content-Disposition", "attachment; filename=Reporte_IncidentesUE.xlsx");
         res.setHeader(
           "Content-Type",
           "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
@@ -894,7 +894,7 @@ const descargarCSV = async (req, res) => {
     exportToCSV(publicaciones)
       .then((buffer) => {
         // Configurar las cabeceras para la descarga del archivo
-        res.setHeader("Content-Disposition", "attachment; filename=datos.xlsx");
+        res.setHeader("Content-Disposition", "attachment; filename=Reporte_IncidentesUE.xlsx");
         res.setHeader(
           "Content-Type",
           "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
@@ -995,7 +995,7 @@ const descargarPDF = async (req, res) => {
 
     //TODO: Generar el PDF
     console.log(publicaciones);
-    const pathPDF =  path.join( __dirname, 'datos.pdf');
+    const pathPDF =  path.join( __dirname, 'Reporte_IncidentesUE.pdf');
     const pdfOptions = {
       childProcessOptions: {
         env: {

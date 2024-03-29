@@ -9,8 +9,8 @@ Asegúrese de tener instalado [Node.js](https://nodejs.org/en) en su sistema.
 
 ### Clonar el repositorio
 ```
-git clone https://github.com/Vinici0/rest-server-movil-web.git
-cd rest-server-movil-web
+git clone https://github.com/Vinici0/vinc_fase3_Back.git
+cd vinc_fase3_Back
 ```
 ### Instalar dependencias
 Ejecute el siguiente comando para instalar todas las dependencias del proyecto:
